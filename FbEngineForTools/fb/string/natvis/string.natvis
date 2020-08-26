@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="fb::DynamicString">
+    <DisplayString>{imp.pointer,s}</DisplayString>
+    <Expand>
+          <ExpandedItem>imp</ExpandedItem>
+    </Expand>
+  </Type>
+
+  <Type Name="fb::StaticString">
+    <DisplayString>{imp.pointer,s}</DisplayString>
+    <Expand>
+          <ExpandedItem>imp</ExpandedItem>
+    </Expand>
+  </Type>
+
+  <Type Name="fb::string::StringImp">
+    <DisplayString>{pointer,s}</DisplayString>
+    <Expand>
+		  <Item Name="[pointer]">pointer</Item>
+		  <Item Name="[length]">*(uint8_t*)(pointer - fb::string::StringImpHelper::StringLengthOffset) + *(uint8_t*)(pointer - fb::string::StringImpHelper::StringLengthOffset + 1)</Item>
+		  <Item Name="[refcount]">*(SizeType*)(pointer - fb::string::StringImpHelper::RefcountOffset)</Item>
+      <Item Name="[static]">(*(bool*)(pointer - fb::string::StringImpHelper::StaticFlagOffset) &amp; 1) == 1</Item>
+      <Item Name="[in-place]">(*(bool*)(pointer - fb::string::StringImpHelper::StaticFlagOffset) &amp; 2) == 2</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="fb::HeapString">
+	  <DisplayString Condition="size &gt; 0">{(char*)(intPointer &amp; (~(uintptr_t)(3))),s}, length = {size - 1}, capacity = {capacity}</DisplayString>
+	  <DisplayString Condition="size &lt;= 0">"", length = {0}, capacity = {capacity}</DisplayString>
+	  <Expand>
+		<Item Name="[pointer]">(char*)(intPointer &amp; (~(uintptr_t)(3)))</Item>
+		<Item Name="[length]">size - 1</Item>
+		<Item Name="[capacity]">capacity</Item>
+	</Expand>
+  </Type>
+
+</AutoVisualizer>

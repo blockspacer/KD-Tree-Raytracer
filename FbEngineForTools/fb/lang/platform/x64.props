@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <!-- Common properties for x64 platform -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RENDER_D3D;WIN64;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>false</ExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <!-- if has Xbox One XDK -->
+  <ItemDefinitionGroup Condition="'$(XboxOneXDKLatest)'!='' And '$(Configuration)'!='ReleaseNoEditor' And '$(Configuration)'!='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_XDK_INSTALLED=FB_TRUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(XboxOneXDKLatest)\PC\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(XboxOneXDKLatest)\PC\lib\amd64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <!-- else no Xbox One XDK -->
+  <ItemDefinitionGroup Condition="'$(XboxOneXDKLatest)'=='' Or '$(Configuration)'=='ReleaseNoEditor' Or '$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_XDK_INSTALLED=FB_FALSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <!-- if has Nintendo SDK -->
+  <ItemDefinitionGroup Condition="'$(NINTENDO_SDK_ROOT)'!='' And '$(Configuration)'!='ReleaseNoEditor' And '$(Configuration)'!='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_NX_SDK_INSTALLED=FB_TRUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(NINTENDO_SDK_ROOT)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <!-- else no Nintendo SDK -->
+  <ItemDefinitionGroup Condition="'$(NINTENDO_SDK_ROOT)'=='' Or '$(Configuration)'=='ReleaseNoEditor' Or '$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_NX_SDK_INSTALLED=FB_FALSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <!-- if has PS4 SDK -->
+  <ItemDefinitionGroup Condition="'$(SCE_ORBIS_SDK_DIR)'!='' And '$(Configuration)'!='ReleaseNoEditor' And '$(Configuration)'!='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_PS4_SDK_INSTALLED=FB_TRUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SCE_ORBIS_SDK_DIR)\target\include_common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SCE_ORBIS_SDK_DIR)\host_tools\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libSceShaderWavePsslc.lib;libSceGpuAddress.lib;libSceGnm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <DelayLoadDLLs>libSceShaderWavePsslc.dll;libSceGpuAddress.dll;libSceGnm.dll</DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <!-- else no Nintendo SDK -->
+  <ItemDefinitionGroup Condition="'$(SCE_ORBIS_SDK_DIR)'=='' Or '$(Configuration)'=='ReleaseNoEditor' Or '$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_PS4_SDK_INSTALLED=FB_FALSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dinput8.lib;winmm.lib;../../external/minizip/lib/minizip_x64.lib;../../external/lua/lib/lua_x64.lib;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt_x64.lib;../../external/FreeImage/Dist/FreeImage_x64.lib;../../external/opencv/opencv_1.0.0/lib/cv_64.lib;../../external/opencv/opencv_1.0.0/lib/cvaux_64.lib;../../external/opencv/opencv_1.0.0/lib/cxcore_64.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundSeedWindSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundSeedWooshSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkPitchShifterFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkAudioInputSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSilenceSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkParametricEQFX.lib;../../external/recastnavigation-master/x64/Release/RecastDetour.lib;../../external/SDL2-2.0.4/windows/64bit/lib/SDL2.lib;../../external/SDL2-2.0.4/windows/64bit/lib/SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='ReleaseNoEditor'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;winmm.lib;../../external/minizip/lib/minizip_x64.lib;../../external/lua/lib/lua_x64.lib;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt_x64.lib;../../external/FreeImage/Dist/FreeImage_x64.lib;../../external/opencv/opencv_1.0.0/lib/cv_64.lib;../../external/opencv/opencv_1.0.0/lib/cvaux_64.lib;../../external/opencv/opencv_1.0.0/lib/cxcore_64.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundSeedWindSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSoundSeedWooshSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkPitchShifterFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkAudioInputSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkSilenceSource.lib;../../external/wwise/x64_vc140/Profile(StaticCRT)/lib/AkParametricEQFX.lib;../../external/recastnavigation-master/x64/Release/RecastDetour.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='FinalRelease'">
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;winmm.lib;../../external/minizip/lib/minizip_x64.lib;../../external/lua/lib/lua_x64.lib;ws2_32.lib;../../external/opencv/opencv_1.0.0/lib/cv_64.lib;../../external/opencv/opencv_1.0.0/lib/cvaux_64.lib;../../external/opencv/opencv_1.0.0/lib/cxcore_64.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkSoundSeedWindSource.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkSoundSeedWooshSource.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkPitchShifterFX.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkAudioInputSource.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkSilenceSource.lib;../../external/wwise/x64_vc140/Release(StaticCRT)/lib/AkParametricEQFX.lib;../../external/recastnavigation-master/x64/Release/RecastDetour.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;winmm.lib;../../external/minizip/lib/minizipd_x64.lib;../../external/lua/lib/lua_x64.lib;;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt_x64.lib;../../external/FreeImage/Dist/FreeImage_x64.lib;../../external/opencv/opencv_1.0.0/lib/cv_64.lib;../../external/opencv/opencv_1.0.0/lib/cvaux_64.lib;../../external/opencv/opencv_1.0.0/lib/cxcore_64.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkSoundSeedWindSource.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkSoundSeedWooshSource.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkPitchShifterFX.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkAudioInputSource.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkSilenceSource.lib;../../external/wwise/x64_vc140/Debug(StaticCRT)/lib/AkParametricEQFX.lib;../../external/recastnavigation-master/x64/Debug/RecastDetour.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+  <!-- For SN DBS -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\external\SDL2-2.0.4\windows\64bit\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

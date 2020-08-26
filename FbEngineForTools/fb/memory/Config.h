@@ -1,0 +1,24 @@
+#ifndef FB_MEMORY_CONFIG_H
+#define FB_MEMORY_CONFIG_H
+
+#if (FB_BUILD == FB_DEBUG)
+
+	#if (FB_COMPILER == FB_MSC)
+		#define FB_MEMORY_HEAP_ASSERT_ENABLED FB_TRUE
+	#else
+		#define FB_MEMORY_HEAP_ASSERT_ENABLED FB_FALSE
+	#endif
+
+#elif (FB_BUILD == FB_RELEASE)
+
+	#define FB_MEMORY_HEAP_ASSERT_ENABLED FB_FALSE
+
+#elif (FB_BUILD == FB_FINAL_RELEASE)
+
+	#define FB_MEMORY_HEAP_ASSERT_ENABLED FB_FALSE
+
+#else
+#error "Unknown build."
+#endif
+
+#endif

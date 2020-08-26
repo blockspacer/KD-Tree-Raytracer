@@ -1,0 +1,23 @@
+#pragma once
+
+#ifndef FB_USE_ZONE_PROFILER
+#if FB_BUILD != FB_FINAL_RELEASE
+
+	#define FB_USE_ZONE_PROFILER FB_FALSE
+
+#elif FB_BUILD == FB_FINAL_RELEASE
+
+	#if FB_FINAL_RELEASE_ZONE_PROFILER_ENABLED == FB_TRUE
+		#define FB_USE_ZONE_PROFILER FB_TRUE
+	#elif FB_FINAL_RELEASE_ZONE_PROFILER_ENABLED == FB_FALSE
+		#define FB_USE_ZONE_PROFILER FB_FALSE
+	#else
+		#error "FB_FINAL_RELEASE_ZONE_PROFILER_ENABLED not defined"
+	#endif
+
+#else
+
+	#error "FB_BUILD or FB_FINAL_RELEASE not defined"
+
+#endif
+#endif

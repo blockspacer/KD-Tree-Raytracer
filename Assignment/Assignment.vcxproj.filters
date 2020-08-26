@@ -1,0 +1,2253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Assignment">
+      <UniqueIdentifier>{4e46a3f3-8346-4309-b8ca-836e0a489ae2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools">
+      <UniqueIdentifier>{1168534a-6c13-4e8b-874b-c85a33e3efe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\container">
+      <UniqueIdentifier>{d520eb5f-89bd-47f0-a66b-8992d7349829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\container\natvis">
+      <UniqueIdentifier>{466cbafd-fc86-47a3-b7ac-581ced1ee21c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\container\traits">
+      <UniqueIdentifier>{dfd5f2a8-fa26-4fd5-8839-209d417ab818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\file">
+      <UniqueIdentifier>{52c2dfb2-68bd-4645-9bee-8eff3db90d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\file\logger">
+      <UniqueIdentifier>{c92f4e8c-c28f-4001-af12-034fbfa22803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\file\package">
+      <UniqueIdentifier>{6331d640-56ae-4dc5-9781-097229f8fd24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\file\tinyxml">
+      <UniqueIdentifier>{b61fe48c-5729-481c-9c6d-9916b17d4b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\file\windows">
+      <UniqueIdentifier>{a496331f-3ccf-4e20-b35e-2e9e354e95ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang">
+      <UniqueIdentifier>{f136b39d-1412-4ae7-9e2d-11a4e5dd51c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\hash">
+      <UniqueIdentifier>{4cb384e0-1bfe-4f5d-b465-91b5be907aac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\logger">
+      <UniqueIdentifier>{87fdfafe-8ec9-4f0f-ac35-4df520cd695b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\platform">
+      <UniqueIdentifier>{da5a269a-a278-4986-bd1d-1c4dbc22ae0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\stacktrace">
+      <UniqueIdentifier>{d99957f2-143d-47b1-a551-ab271d21b4d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\thread">
+      <UniqueIdentifier>{183455fa-88ae-4d20-b378-a1ed6c11949e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\time">
+      <UniqueIdentifier>{1a62556d-ddab-40c1-9a18-6d73f1f5ac11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\thread\windows">
+      <UniqueIdentifier>{36647f52-5326-4e26-9ceb-0767d9fde11c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\math">
+      <UniqueIdentifier>{0060f3cd-dc69-4a5c-a9d4-e6ed308dc4e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\math\curve">
+      <UniqueIdentifier>{1bfae7fb-ec55-486a-acc8-30e81eae319b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\math\curve\detail">
+      <UniqueIdentifier>{4ad291d3-ac49-464a-ba9c-4cc376c6eb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\memory">
+      <UniqueIdentifier>{63bfda8a-08ca-48cc-9673-7632b8928300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\memory\stats">
+      <UniqueIdentifier>{cfb4c859-2fa1-42a8-9e39-ce4ad6bc5d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\profiling">
+      <UniqueIdentifier>{6c40a43f-d128-4bc5-9757-c2b246a56c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\stream">
+      <UniqueIdentifier>{ad5d0ea6-a411-4332-b26c-304a1036a71b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\string">
+      <UniqueIdentifier>{49515675-0618-49a4-9cf8-4b5df20461a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\string\detail">
+      <UniqueIdentifier>{5fb2b098-13ce-4b3e-aa9e-a4da23d19f74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\string\natvis">
+      <UniqueIdentifier>{b568315c-4114-4709-b91b-54ebe2ba51c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\string\util">
+      <UniqueIdentifier>{3f35c48d-f8e2-4892-a859-05bc3822ca0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\sys">
+      <UniqueIdentifier>{9d0e39cc-8e8e-4d67-81b3-0373862b6278}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\sys\util">
+      <UniqueIdentifier>{80f87701-5b10-48ec-9033-0c25cfa9adf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\sys\windows">
+      <UniqueIdentifier>{11bd8e58-6c59-444b-80bd-cb2adde689c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\sys\util\windows">
+      <UniqueIdentifier>{94b6c795-4def-4698-a3fd-8816e32dd6e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\task">
+      <UniqueIdentifier>{e3b6a483-bac5-43f2-9b1e-54338efd7f67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\util">
+      <UniqueIdentifier>{6365ad36-f419-4168-8ae0-2b7cac724a35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\util\lz4">
+      <UniqueIdentifier>{04c57827-42a4-4e5e-8c8d-cddb432e14ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\util\zstd">
+      <UniqueIdentifier>{6acf04fa-aeab-457a-b09b-22741504307e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\util\zstd2">
+      <UniqueIdentifier>{164f0d03-202d-4d83-ba7d-8c6389cf3a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\lang\preprocessor">
+      <UniqueIdentifier>{335b7e31-1207-4a44-917d-d4ede0fbc361}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\algorithm">
+      <UniqueIdentifier>{ab6f892c-2602-4891-8b19-7cdbf6de9045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\algorithm\traits">
+      <UniqueIdentifier>{6a483eb8-06a3-49f4-a5d7-9b1d088853de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\math\traits">
+      <UniqueIdentifier>{edacc213-23cc-47b4-8d27-18467f7c82d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\sys\versioncontrol">
+      <UniqueIdentifier>{6b02b779-caff-4a8e-b710-6d73e66c04af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\math\util">
+      <UniqueIdentifier>{9398e10e-6caf-4248-a9f9-e6f56b08208c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\memory\detail">
+      <UniqueIdentifier>{171767c6-05c8-487b-b9f8-88080d246868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\FbEngineForTools\util\base64">
+      <UniqueIdentifier>{ed6df37b-5ab1-4bba-bbf6-24aafae7eaa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\external">
+      <UniqueIdentifier>{3610e78e-78ef-4604-b3f1-3ca4fa1fec04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\external\plyreader">
+      <UniqueIdentifier>{f150c89e-b4e6-4866-a08b-c32f2af8986c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\external\tgasaver">
+      <UniqueIdentifier>{e6c40151-4887-4a93-8410-5bad10309095}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\container\ContainerTest.cpp">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\container\DataBase.cpp">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\container\ImpByteElementArray.cpp">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\container\LinearHashBase.cpp">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\logger\Logger.cpp">
+      <Filter>Source Files\FbEngineForTools\file\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\CopyFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\CreateDirectoryWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\DeleteDirectory.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\DeleteFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\DoesFileExist.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\FileList.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\FileSystemListener.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\InputFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\InputFileAsyncWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\MoveFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\TemporaryFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\windows\TimeStampWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\tinyxml\tinyxml2.cpp">
+      <Filter>Source Files\FbEngineForTools\file\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\package\CachingCustomizableStandardFilePackage.cpp">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\package\CustomizableStandardFilePackage.cpp">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\package\MysteryFilePackage.cpp">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\CreateDirectory.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\DebugBlockWriter.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\File.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\FileAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\FileHash.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\FileManager.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\FileRename.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\LineReader.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\MemoryMappedFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\OutputFile.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\RootPath.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\SpecialDirectory.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\TimeStamp.cpp">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\hash\Hash.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\logger\GlobalLogger.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\time\HighResolutionTime.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\time\RunningSystemTimer.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\time\ScalableTimer.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\time\SystemTime.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\time\Time.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\windows\ConditionVariableWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\windows\MutexWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\windows\SemaphoreWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\windows\ThreadWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\DataGuard.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\FastSemaphore.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\IThreadEntry.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\Mutex.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\ScopedRef.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\thread\Thread.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\stacktrace\StackTrace.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\stacktrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\stacktrace\StackTraceWindows.cpp">
+      <Filter>Source Files\FbEngineForTools\lang\stacktrace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\curve\BezierCurve.cpp">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\curve\CubicBezierCurve.cpp">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\curve\MultiCurve.cpp">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\curve\PolylineCurve.cpp">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\curve\TCBCurve.cpp">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Color3.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Denormal.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Matrix.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Quaternion.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\RandomSeed.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\SIMDVec4.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Vec2.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Vec3.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\math\Vec4.cpp">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\stats\DebugStats.cpp">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\stats\DebugStatsScope.cpp">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\stats\DebugStatsVariable.cpp">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\AtomicLinearAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\AtomicPointerList.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\BlockAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\FixedSizeAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\FixedSizeAllocatorBase.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\FixedSizeDynamicAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\FixedSizeLargeDynamicAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\GlobalFixedAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\HeapAddressCheck.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\HeapAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\LargePageAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\MultiFixedSizeAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\MultiFixedSizeDynamicAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\MultiSizePool.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\SystemAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\TempAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\memory\TempVariableAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\AllocationProfiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\InputLagDebugger.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\MutexProfiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\Profiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\ScopedProfiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\TaskProfiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\ZoneProfiler.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\ZoneProfilerCommon.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\stream\InputStream.cpp">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\stream\InputStream2.cpp">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\stream\TextOutputStream.cpp">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\CompareString.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\Filename.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\FindString.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\ReplaceChar.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\ReplaceSubstring.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\detail\StringToNumberConversion.cpp">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\util\CreateTemporaryHeapString.cpp">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\util\SimpleUTF16String.cpp">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\util\SplitString.cpp">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\util\UnicodeConverter.cpp">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\AppendToString.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\DynamicString.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\HeapString.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\StaticString.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\StringBuilder.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\StringImp.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\StringRef.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\sys\windows\RunProcess.cpp">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\sys\util\windows\SystemInfoUtil.cpp">
+      <Filter>Source Files\FbEngineForTools\sys\util\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\task\GetSystemThreadPriority.cpp">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\task\Scheduler.cpp">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\lz4\LZ4HCWrapper.cpp">
+      <Filter>Source Files\FbEngineForTools\util\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\lz4\LZ4Wrapper.cpp">
+      <Filter>Source Files\FbEngineForTools\util\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\zstd\ZStdWrapper.cpp">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper0.cpp">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper1.cpp">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper2.cpp">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper3.cpp">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\Base64.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\BufferCompressor.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\Checksum.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\Compressor.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\ExpGolomb.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\FBSpam.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\OptionsFileModifier.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\Tweaker.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\util\TweakManager.cpp">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\Precompiled.cpp">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\ToolsMain.cpp">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\ToolSystemAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\AlignmentFunctions.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\AllocationDebugger.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\AssertHelp.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\AssertStats.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Atomics.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\BitmaskTypes.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\CallStack.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\CallstackStorage.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\CombinedAllocation.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\CountBits.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Cstrlen.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\DebugHelp.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Delegate.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Div128.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\FBAssert.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\FBSingleThreadAssert.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\FiendishAllocator.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Megaton.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\MegatonDebugger.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\MemoryFunctions.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\PrintfHandler.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\ProgrammerAssertPrinting.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\ProjectInfo.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\SharedPointer.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\Signal.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\StoreCallstack.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\MemTools.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\string\StringLiteral.cpp">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\file\logger\FocusTestReportWriter.cpp">
+      <Filter>Source Files\FbEngineForTools\file\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\sys\versioncontrol\SVN.cpp">
+      <Filter>Source Files\FbEngineForTools\sys\versioncontrol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\container\StringMapFind.cpp">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\AppendCallstack.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\lang\StoredCallstack.cpp">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\ZoneProfilerCallstackDump.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\sys\windows\GetProcessId.cpp">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\StupidRingBuffer.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\profiling\StupidHashMap.cpp">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\sys\windows\FindProcess.cpp">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\FbEngineForTools\fb\ConsoleOutputReceiver.cpp">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\plyreader\ply_reader.cpp">
+      <Filter>Source Files\external\plyreader</Filter>
+    </ClCompile>
+    <ClCompile Include="Triangle.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Raytracer.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\tgasaver\tga_saver.cpp">
+      <Filter>Source Files\external\tgasaver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\FbEngineForTools\fb\container\natvis\aflist.natvis">
+      <Filter>Source Files\FbEngineForTools\container\natvis</Filter>
+    </Natvis>
+    <Natvis Include="..\FbEngineForTools\fb\container\natvis\container.natvis">
+      <Filter>Source Files\FbEngineForTools\container\natvis</Filter>
+    </Natvis>
+    <Natvis Include="..\FbEngineForTools\fb\container\natvis\hashmap.natvis">
+      <Filter>Source Files\FbEngineForTools\container\natvis</Filter>
+    </Natvis>
+    <Natvis Include="..\FbEngineForTools\fb\container\natvis\hashset.natvis">
+      <Filter>Source Files\FbEngineForTools\container\natvis</Filter>
+    </Natvis>
+    <Natvis Include="..\FbEngineForTools\fb\container\natvis\vectors.natvis">
+      <Filter>Source Files\FbEngineForTools\container\natvis</Filter>
+    </Natvis>
+    <Natvis Include="..\FbEngineForTools\fb\string\natvis\string.natvis">
+      <Filter>Source Files\FbEngineForTools\string\natvis</Filter>
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\FbEngineForTools\fb\container\traits\ContainerTraits.h">
+      <Filter>Source Files\FbEngineForTools\container\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\AFList.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\AllocFriendlyList.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\AllocFriendlyListInline.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\AllocFriendlyListIteratorInline.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\AllocFriendlyListUtilsImp.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ArraySlice.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\BufferedIterator.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\CommonDependencyExports.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ContainerCustomRangeFor.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ContainerRangeFor.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ContainerTest.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\DataBase.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\Deque.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\DequeInline.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ImpByteElementArray.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearHashBase.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearHashMap.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearHashSet.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearMap.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearPodMap.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearPodSet.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\LinearSet.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\MapCommonImp.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\Pair.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\PodStack.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\PodVector.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\Queue.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\ReverseBufferedIterator.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\Stack.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\Vector.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\VectorCommonImp.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\VectorIteratorWrapper.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\VectorUtilsImp.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\logger\Logger.h">
+      <Filter>Source Files\FbEngineForTools\file\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\windows\InputFileAsyncWindows.h">
+      <Filter>Source Files\FbEngineForTools\file\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\tinyxml\tinyxml2.h">
+      <Filter>Source Files\FbEngineForTools\file\tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\package\CachingCustomizableStandardFilePackage.h">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\package\CustomizableStandardFilePackage.h">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\package\IFilePackage.h">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\package\MysteryFilePackage.h">
+      <Filter>Source Files\FbEngineForTools\file\package</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\AsyncFileReceiver.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\CopyFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\CreateDirectory.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\DebugBlockWriter.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\DeleteDirectory.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\DeleteFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\DoesFileExist.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\File.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileAllocator.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileFlag.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileHash.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileList.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileManager.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileRename.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileSortInfo.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\FileSystemListener.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\InputFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\InputFileAsync.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\LineReader.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\MemoryMappedFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\MoveFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\OutputFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\RootPath.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\SpecialDirectory.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\TemporaryFile.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\TimeStamp.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\hash\Hash.h">
+      <Filter>Source Files\FbEngineForTools\lang\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\hash\xxhash.h">
+      <Filter>Source Files\FbEngineForTools\lang\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\logger\GlobalLogger.h">
+      <Filter>Source Files\FbEngineForTools\lang\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\logger\ILogger.h">
+      <Filter>Source Files\FbEngineForTools\lang\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\logger\LoggingMacros.h">
+      <Filter>Source Files\FbEngineForTools\lang\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\HighResolutionTime.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\RunningSystemTimer.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\ScalableTimer.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\ScalableTimerInline.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\ScopedSystemTimer.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\ScopedTimer.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\SystemDeltaTime.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\SystemTime.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\Time.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\time\TimeInline.h">
+      <Filter>Source Files\FbEngineForTools\lang\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\AtomicObject.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\ConditionVariable.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\DataGuard.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\DataGuardDecl.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\FastSemaphore.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\IThreadEntry.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\Mutex.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\MutexGuard.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\ScopedRef.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\ScopedRefDecl.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\Semaphore.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\SemaphoreGuard.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\thread\Thread.h">
+      <Filter>Source Files\FbEngineForTools\lang\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\stacktrace\StackTrace.h">
+      <Filter>Source Files\FbEngineForTools\lang\stacktrace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\ByteOrder.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Compiler.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\CompilerOptimizations.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Config.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Cpp11Compat.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Decl.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\EnableDevOptimisations.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\FBConstants.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\FBMath.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\FBMinMax.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\ForceInline.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\FourCC.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\IncludeIntrin.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Input.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Likely.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\LineFeed.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\LocalConfig.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Platform.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigAudio.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigDemo.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigEditor.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigGUI.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigInput.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigLang.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigMath.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigNet.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigPhysics.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigRenderer.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\PostGlobalConfigStore.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Prefetch.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\Sel.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\platform\WarningDisables.h">
+      <Filter>Source Files\FbEngineForTools\lang\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\detail\BandedMatrix.h">
+      <Filter>Source Files\FbEngineForTools\math\curve\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\detail\SplineBasis.h">
+      <Filter>Source Files\FbEngineForTools\math\curve\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\BezierCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\BSplineCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\BSplineCurveCreator.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\BSplineCurveFunctions.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\CubicBezierCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\MultiCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\MultiCurveDecl.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\MultiCurveEnums.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\PolylineCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\TCBCurve.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\curve\TCBCurveDecl.h">
+      <Filter>Source Files\FbEngineForTools\math\curve</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Angle.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Bounds.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\ClampToLength.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Color3.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Color3HSV.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Color4.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\ColorConstants.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Constants.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\DeclareTypes.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Denormal.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Lerp.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Matrix.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Matrix23.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Plane.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Pose.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Quaternion.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\QuaternionOptimized.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Random64.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\RandomLCG.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\RandomSeed.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\RectangleMinMax.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\RectangleMinMaxDecl.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDMat3x4.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDVec4.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDVec4Neon.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDVec4Ref.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDVec4SSE.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\SIMDVec4Tester.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\TrigOptimized.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\ValueWithNumComponents.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Vec2.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Vec3.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Vec3Optimized.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\Vec4.h">
+      <Filter>Source Files\FbEngineForTools\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\Config.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\ContainerDebugStatsHeaderInline.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\ContainerDebugStatsSourceInline.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStats.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStatsScope.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStatsScopeIterator.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStatsVariable.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStatsVariableImplementingType.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\DebugStatsVariableIterator.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\stats\IDebugStatsBreakpointListener.h">
+      <Filter>Source Files\FbEngineForTools\memory\stats</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\AtomicLinearAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\AtomicPointerList.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\BlockAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\Config.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\DataBreakpoint.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\FixedSizeAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\FixedSizeAllocatorBase.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\FixedSizeDynamicAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\FixedSizeLargeDynamicAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\GlobalFixedAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\HeapAddressCheck.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\HeapAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\IAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\IBlockAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\InstancePool.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\InstancePoolInline.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\LargePageAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\MultiFixedSizeAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\MultiFixedSizeDynamicAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\MultiInstancePool.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\MultiSizePool.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\SystemAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\TempAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\TempVariableAllocator.h">
+      <Filter>Source Files\FbEngineForTools\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\AllocationProfiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\InputLagDebugger.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\MutexProfiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\Profiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ScopedProfiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\TaskProfiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneProfiler.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneProfilerMemoryDump.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\BitInputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\BitOutputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\BitTypes.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CompressedEnum.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CompressedFloat.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CompressedInt.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CompressedNormal.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CompressedQuat.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\InputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\InputStream2.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\InputStreamInline.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\LimitedString.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\ObjectCountHeader.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\OutputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\OutputStream2.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\OutputStreamInline.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\PropertyList.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\StreamObjectTable.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\StreamStringTable.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\TempOutputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\TextOutputStream.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\TextOutputStreamInline.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\VariableSizeU32.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\CaseConversion.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\CompareString.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\Filename.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\FindString.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\ReplaceChar.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\ReplaceSubstring.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\detail\StringToNumberConversion.h">
+      <Filter>Source Files\FbEngineForTools\string\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\CreateTemporaryHeapString.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\ReplaceMarkers.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\SimpleUTF16String.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\SplitString.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\UnicodeConverter.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\AppendToString.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\Common.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\CommonImpl.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\Config.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\DynamicString.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\HeapString.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StaticString.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringBuilder.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringHash.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringImp.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringRef.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringRefInline.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\Substring.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\windows\RunProcess.h">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\util\SystemInfoUtil.h">
+      <Filter>Source Files\FbEngineForTools\sys\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\Config.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\GetSystemThreadPriority.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\ISchedulerTask.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\Scheduler.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerImpGroup.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerImpRepeatable.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerImpSync.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerImpSyncInline.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerImpTask.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\SchedulerTaskArray.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\task\TaskId.h">
+      <Filter>Source Files\FbEngineForTools\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\lz4\lz4.h">
+      <Filter>Source Files\FbEngineForTools\util\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\bitstream.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\error.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\fse.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\fse_static.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\huff0.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\huff0_static.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\mem.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd_internal.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd_static.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\Base64.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\BufferCompressor.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\Checksum.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\Compressor.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\ExpGolomb.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\FBSpam.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\IndexedSet.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\IOptionsFileModifierErrorListener.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\ObjectIndexSet.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\ObjectSet.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\OptionsFileModifier.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\SerializableFunction.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\SerializableFunctionImpl.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\Tweaker.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\TweakManager.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\VerifyMacros.h">
+      <Filter>Source Files\FbEngineForTools\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\Precompiled.h">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\ToolsMain.h">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Alignment.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\AlignmentFunctions.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\AllocationDebugger.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\AssertHelp.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\AssertStats.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Atomics.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\BitmaskTypes.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\BitmaskTypesInline.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ByteOrderSwap.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CallStack.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CallStackListener.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CallstackStorage.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ClassId.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CombinedAllocation.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CombinedAllocationInline.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Config.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Const.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ContainerInterface.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\CountBits.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Cstrlen.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\DebugHelp.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Declaration.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Delegate.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Div128.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\DynamicCast.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\EmulatedSSE.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FastCast.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FastCopy.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FastMinMax.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FBAssert.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FBExplicitTypedef.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FBPrintf.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FBSingleThreadAssert.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FBStaticAssert.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\FiendishAllocator.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\GlobalConfig.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\GlobalFixedAllocateFunctions.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\GlobalMemoryOperators.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IAllocationDebuggerDump.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IncludeWindows.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IntTypes.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\L0CommonExports.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Megaton.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MegatonDebugger.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MemoryFunctions.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MemoryOperatorsConfig.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MemoryStats.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MinMax.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Mul128.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\NullType.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\NumericLimits.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Package.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Pimpl.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\PrintfHandler.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ProgrammerAssertPrinting.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ProjectInfo.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\RefCountPointer.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\resource.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\RoundToPow.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ScopedArray.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ScopedArrayInline.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ScopedPointer.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ScopedPointerInline.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\SharedArray.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\SharedPointer.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\SharedPointerInline.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Signal.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\StoreCallstack.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Swap.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Types.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\UnalignedLoad.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\CommonMacros.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Decrease.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Increase.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Loop.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Narg.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\StripCommas.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Subtract.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Unpack.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\preprocessor\Halve.h">
+      <Filter>Source Files\FbEngineForTools\lang\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ICharacterOutputReceiver.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\LocalStatic.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IsTriviallyCopyable.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\EnableIf.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IsClass.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\PlacementNew.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Move.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\RemoveReference.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\traits\CompareTraits.h">
+      <Filter>Source Files\FbEngineForTools\algorithm\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\Comparator.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\IsStringLiteral.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\CompareResult.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\ComparatorInline.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MemTools.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IsSame.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Vec3Traits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Vec3CompareTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\QuaternionTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\QuaternionCompareTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Vec2Traits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Vec2CompareTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneType.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneDefine.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\StringLiteral.h">
+      <Filter>Source Files\FbEngineForTools\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\IsConvertible.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\Sort.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\versioncontrol\DefaultVersionControl.h">
+      <Filter>Source Files\FbEngineForTools\sys\versioncontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\IncludeAlgorithm.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\logger\FocusTestReportWriter.h">
+      <Filter>Source Files\FbEngineForTools\file\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\MegatonClassDeclare.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\algorithm\BinarySearch.h">
+      <Filter>Source Files\FbEngineForTools\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\string\util\UnicodeDefs.h">
+      <Filter>Source Files\FbEngineForTools\string\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\versioncontrol\SVN.h">
+      <Filter>Source Files\FbEngineForTools\sys\versioncontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\StringMapFind.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\container\StringMapFindInline.h">
+      <Filter>Source Files\FbEngineForTools\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\AppendCallstack.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\StoredCallstack.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneProfilerCallstackDump.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneProfilerCommon.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\file\AbsolutePath.h">
+      <Filter>Source Files\FbEngineForTools\file</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\util\IsDenormal.h">
+      <Filter>Source Files\FbEngineForTools\math\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\util\IsFinite.h">
+      <Filter>Source Files\FbEngineForTools\math\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\util\IsInf.h">
+      <Filter>Source Files\FbEngineForTools\math\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\util\IsNaN.h">
+      <Filter>Source Files\FbEngineForTools\math\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\detail\SimpleStack.h">
+      <Filter>Source Files\FbEngineForTools\memory\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\memory\detail\SimpleStackInline.h">
+      <Filter>Source Files\FbEngineForTools\memory\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\CommonStream2.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\InputStream2Decl.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\stream\InputStream2Macro.h">
+      <Filter>Source Files\FbEngineForTools\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Color3Traits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\BooleanTemplateType.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneRing.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Color3ColorTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\Color3CompareTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\lz4\lz4hc.h">
+      <Filter>Source Files\FbEngineForTools\util\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\math\traits\ColorTraits.h">
+      <Filter>Source Files\FbEngineForTools\math\traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_v04.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\base64\base64.h">
+      <Filter>Source Files\FbEngineForTools\util\base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_decompress_block.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_ddict.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_double_fast.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_fast.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\hist.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_lazy.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_ldm.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstdmt_compress.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\pool.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\debug.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\error_private.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneEvent.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_errors.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\mem.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\fse.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\huf.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\compiler.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\cpu.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_decompress_internal.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_internal.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\bitstream.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\xxhash.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\zstd_compress_internal.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\util\zstd2\threading.h">
+      <Filter>Source Files\FbEngineForTools\util\zstd2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneCursor.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\ZoneList.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\windows\GetProcessId.h">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\Defer.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\lang\ScopedDeferrer.h">
+      <Filter>Source Files\FbEngineForTools\lang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\StupidRingBuffer.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\profiling\StupidHashMap.h">
+      <Filter>Source Files\FbEngineForTools\profiling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\windows\FindProcess.h">
+      <Filter>Source Files\FbEngineForTools\sys\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\sys\util\LibraryLoaderUtil.h">
+      <Filter>Source Files\FbEngineForTools\sys\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\FbEngineForTools\fb\ConsoleOutputReceiver.h">
+      <Filter>Source Files\FbEngineForTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="LightType.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\plyreader\ply_reader.h">
+      <Filter>Source Files\external\plyreader</Filter>
+    </ClInclude>
+    <ClInclude Include="Triangle.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Raytracer.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Ray.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="IntersectionType.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\tgasaver\tga_saver.h">
+      <Filter>Source Files\external\tgasaver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="raytracer.ini">
+      <Filter>Source Files\Assignment</Filter>
+    </None>
+  </ItemGroup>
+</Project>

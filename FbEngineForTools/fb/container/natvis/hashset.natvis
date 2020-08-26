@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="fb::LinearHashSet&lt;*&gt;::ConstIterator">
+		<DisplayString>ConstIterator {((KeyType*)((const uint32_t*)(hashSet->intPointer &amp; hashSet->PointerMask) + hashSet->capacity))[index]}</DisplayString>
+	</Type>
+	<Type Name="fb::LinearHashSet&lt;*&gt;::Iterator">
+		<DisplayString>Iterator {((KeyType*)((const uint32_t*)(hashSet->intPointer &amp; hashSet->PointerMask) + hashSet->capacity))[index]}</DisplayString>
+	</Type>
+	<Type Name="fb::LinearHashSet&lt;*&gt;">
+		<DisplayString>LinearHashSet size = {size}, capacity = {capacity}</DisplayString>
+		<Expand>
+			<Item Name="[size]">size</Item>
+			<Item Name="[capacity]">capacity</Item>
+			<CustomListItems MaxItemsPerView="5000">
+				<Variable Name="i" InitialValue="0" />
+				<Variable Name="hashpointer" InitialValue="(const uint32_t*)(intPointer &amp; PointerMask)" />
+				<Variable Name="keypointer" InitialValue="(const KeyType*)(hashpointer + capacity)" />
+				<Size>size</Size>
+				<Loop>
+					<If Condition="hashpointer[i] != 0">
+						<Item>keypointer[i]</Item>
+					</If>
+
+					<Exec>i++</Exec>
+					<Break Condition="i >= capacity"/>
+				</Loop>
+			</CustomListItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>

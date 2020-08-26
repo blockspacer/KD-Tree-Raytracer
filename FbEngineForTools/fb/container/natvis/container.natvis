@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+  <Type Name="fb::Pair&lt;*,*&gt;">
+    <DisplayString>({first}, {second})</DisplayString>
+    <Expand>
+          <Item Name="[first]">first</Item>
+          <Item Name="[second]">second</Item>
+    </Expand>
+  </Type>
+
+  <Type Name="fb::ArraySlice&lt;*&gt;">
+    <DisplayString>{{ size={size} }}</DisplayString>
+    <Expand>
+      <Item Name="[size]">size</Item>
+      <ArrayItems>
+        <Size>size</Size>
+        <ValuePointer>($T1*)rawValues</ValuePointer>
+      </ArrayItems>
+    </Expand>
+  </Type>
+
+</AutoVisualizer>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+
+	<Type Name="fb::container::AllocFriendlyList&lt;*,*,*&gt;">
+		<DisplayString>AllocFriendlyList size = {size} and capacity = {capacity}</DisplayString>
+		<Expand>
+			<Item Name="[size]">size</Item>
+			<Item Name="[capacity]">capacity</Item>
+			<Item Name="[firstNode]">firstNode</Item>
+			<Item Name="[lastNode]">lastNode</Item>
+			<Item Name="[firstFreeIndex]">firstFreeIndex</Item>
+			<IndexListItems>
+				<Size>size</Size>
+				<ValueNode Condition="values[$i].previous == IndexType(-1)">(values[firstNode].item)</ValueNode>
+				<ValueNode Condition="values[$i].previous != IndexType(-1)">(values[$i].item)</ValueNode>
+			</IndexListItems>
+			<Synthetic Name="Storage array">
+				<DisplayString>Array (capacity = {capacity})</DisplayString>
+				<Expand>
+					<ArrayItems>
+						<Size>capacity</Size>
+						<ValuePointer>values</ValuePointer>
+					</ArrayItems>
+				</Expand>
+			</Synthetic>
+		</Expand>
+	</Type>
+	
+</AutoVisualizer>

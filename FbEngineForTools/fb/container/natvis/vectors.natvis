@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	
+	<Type Name="fb::Vector&lt;*&gt;">
+		<DisplayString>Vector size = {size}, capacity = {capacity}</DisplayString>
+		<Expand>
+			<Item Name="[size]">size</Item>
+			<Item Name="[capacity]">capacity</Item>
+			<ArrayItems>
+				<Size>size</Size>
+				<ValuePointer>($T1*)(intPointer &amp; (~(uintptr_t)(3)))</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+
+	<Type Name="fb::PodVector&lt;*&gt;">
+		<DisplayString>PodVector size = {size}, capacity = {capacity}</DisplayString>
+		<Expand>
+			<Item Name="[size]">size</Item>
+			<Item Name="[capacity]">capacity</Item>
+			<ArrayItems>
+				<Size>size</Size>
+				<ValuePointer>($T1*)(intPointer &amp; (~(uintptr_t)(3)))</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+	
+</AutoVisualizer>

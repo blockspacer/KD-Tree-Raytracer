@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <SourceDir>$(SolutionDir)..\..</SourceDir>
+    <ExternalDir>$(SolutionDir)..\..\external</ExternalDir>
+    <FBDir>$(SolutionDir)..\..\fb</FBDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.60315.1</_ProjectFileVersion>
+  </PropertyGroup>
+  
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..;$(SourceDir);$(ExternalDir);$(ExternalDir)\luabind\include;$(ExternalDir)\fb_lua_include;$(ExternalDir)\DXSDK\Include;$(ExternalDir)\opencv\opencv_1.0.0\cv\include;$(ExternalDir)\opencv\opencv_1.0.0\cxcore\include;$(ExternalDir)\wwise\include;$(ExternalDir)\steamworks\public;$(ExternalDir)\speex-1.2rc1\include;$(ExternalDir)\fbx_sdk_2018_1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <ForcedIncludeFiles>fb/platform/GlobalConfig.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>FB_BUILD=FB_DEBUG;_DEBUG;_SECURE_SCL=0;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Regression'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_BUILD=FB_REGRESSION;_DEBUG;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>FB_BUILD=FB_RELEASE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='ReleaseNoEditor'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_FORCE_NO_EDITOR=FB_TRUE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <AdditionalOptions>/MP1 %(AdditionalOptions)</AdditionalOptions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>FB_BUILD=FB_FINAL_RELEASE;NDEBUG;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ExceptionHandling />
+    </ClCompile>
+  </ItemDefinitionGroup>
+  
+  <ItemGroup>
+    <BuildMacro Include="SourceDir">
+      <Value>$(SourceDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="ExternalDir">
+      <Value>$(ExternalDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="FBDir">
+      <Value>$(FBDir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

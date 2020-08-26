@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="fb::LinearHashMap&lt;*&gt;::ConstIterator">
+		<DisplayString>ConstIterator {((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].key}</DisplayString>
+		<Expand>
+			<Item Name="[key]">((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].key</Item>
+			<Item Name="[value]">((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].value</Item>
+		</Expand>
+	</Type>
+	<Type Name="fb::LinearHashMap&lt;*&gt;::Iterator">
+		<DisplayString>Iterator {((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].key}</DisplayString>
+		<Expand>
+			<Item Name="[key]">((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].key</Item>
+			<Item Name="[value]">((const PairType*)((const uint32_t*)(hashMap->intPointer &amp; hashMap->PointerMask) + hashMap->capacity))[index].value</Item>
+		</Expand>
+	</Type>
+	<Type Name="fb::LinearHashMap&lt;*&gt;">
+		<DisplayString>LinearHashMap size = {size}, capacity = {capacity}</DisplayString>
+		<Expand>
+			<Item Name="[size]">size</Item>
+			<Item Name="[capacity]">capacity</Item>
+			<CustomListItems MaxItemsPerView="5000">
+				<Variable Name="i" InitialValue="0" />
+				<Variable Name="datapointer" InitialValue="(const uint32_t*)(intPointer &amp; PointerMask)" />
+				<Variable Name="pairpointer" InitialValue="(const PairType*)(datapointer + capacity)" />
+				<Size>size</Size>
+				<Loop>
+					<If Condition="datapointer[i] != 0">
+						<Item>pairpointer[i]</Item>
+					</If>
+					<Exec>i++</Exec>
+					<Break Condition="i >= capacity"/>
+				</Loop>
+			</CustomListItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>

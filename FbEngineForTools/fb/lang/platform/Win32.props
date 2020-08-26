@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;RENDER_D3D;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;XInput.lib;winmm.lib;../../external/minizip/lib/minizip.lib;../../external/lua/lib/lua.lib;../../external/physx/lib/Win32/PhysX3CHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CommonCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CharacterKinematicCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CookingCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3ExtensionsCHECKED.lib;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt.lib;../../external/FreeImage/Dist/FreeImage.lib;../../external/opencv/opencv_1.0.0/lib/cv.lib;../../external/opencv/opencv_1.0.0/lib/cvaux.lib;../../external/opencv/opencv_1.0.0/lib/cxcore.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundSeedWind.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundSeedWoosh.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkAudioInputSource.lib;../../external/recastnavigation-master/Release/RecastDetour.lib;../../external/jemalloc-3.6.0/lib/Win32/Release/jemalloc.lib;$(OutDir)GameRevisionInline.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ClCompile>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\DevelopmentKit_Windows_32bit_MSVC17\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='ReleaseNoEditor'">
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;XInput.lib;winmm.lib;../../external/minizip/lib/minizip.lib;../../external/lua/lib/lua.lib;../../external/physx/lib/Win32/PhysX3CHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CommonCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CharacterKinematicCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3CookingCHECKED_x86.lib;../../external/physx/lib/Win32/PhysX3ExtensionsCHECKED.lib;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt.lib;../../external/FreeImage/Dist/FreeImage.lib;../../external/opencv/opencv_1.0.0/lib/cv.lib;../../external/opencv/opencv_1.0.0/lib/cvaux.lib;../../external/opencv/opencv_1.0.0/lib/cxcore.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundSeedWind.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkSoundSeedWoosh.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/Win32_vc140/Profile(StaticCRT)/lib/AkAudioInputSource.lib;../../external/recastnavigation-master/Release/RecastDetour.lib;../../external/jemalloc-3.6.0/lib/Win32/Release/jemalloc.lib;$(OutDir)GameRevisionInline.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\DevelopmentKit_Windows_32bit_MSVC17\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\DevelopmentKit_Windows_32bit_MSVC17\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <Link>
+      <IgnoreSpecificDefaultLibraries>ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;XInput.lib;winmm.lib;../../external/minizip/lib/minizip.lib;../../external/lua/lib/lua.lib;../../external/physx/lib/Win32/PhysX3_x86.lib;../../external/physx/lib/Win32/PhysX3Common_x86.lib;../../external/physx/lib/Win32/PhysX3CharacterKinematic_x86.lib;../../external/physx/lib/Win32/PhysX3Cooking_x86.lib;../../external/physx/lib/Win32/PhysX3Extensions.lib;ws2_32.lib;../../external/opencv/opencv_1.0.0/lib/cv.lib;../../external/opencv/opencv_1.0.0/lib/cvaux.lib;../../external/opencv/opencv_1.0.0/lib/cxcore.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkSoundSeedWind.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkSoundSeedWoosh.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/Win32_vc140/Release(StaticCRT)/lib/AkAudioInputSource.lib;../../external/recastnavigation-master/Release/RecastDetour.lib;$(OutDir)GameRevisionInline.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <Link>
+      <AdditionalDependencies>dsound.lib;dinput8.lib;XInput.lib;winmm.lib;../../external/minizip/lib/minizipd.lib;../../external/lua/lib/lua.lib;../../external/physx/lib/Win32/PhysX3DEBUG_x86.lib;../../external/physx/lib/Win32/PhysX3CommonDEBUG_x86.lib;../../external/physx/lib/Win32/PhysX3CharacterKinematicDEBUG_x86.lib;../../external/physx/lib/Win32/PhysX3CookingDEBUG_x86.lib;../../external/physx/lib/Win32/PhysX3ExtensionsDEBUG.lib;ws2_32.lib;../../external/nvidia-texture-tools/lib/nvtt.lib;../../external/FreeImage/Dist/FreeImage.lib;../../external/opencv/opencv_1.0.0/lib/cv.lib;../../external/opencv/opencv_1.0.0/lib/cvaux.lib;../../external/opencv/opencv_1.0.0/lib/cxcore.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkSoundEngine.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkMemoryMgr.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkStreamMgr.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkMusicEngine.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkSoundSeedWind.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkSoundSeedWoosh.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkVorbisDecoder.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkRoomVerbFX.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkCompressorFX.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkPeakLimiterFX.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkMeterFx.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkDelayFX.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/CommunicationCentral.lib;../../external/wwise/Win32_vc140/Debug(StaticCRT)/lib/AkAudioInputSource.lib;../../external/recastnavigation-master/Debug/RecastDetour.lib;../../external/jemalloc-3.6.0/lib/Win32/Debug/jemalloc.lib;$(OutDir)GameRevisionInline.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <LargeAddressAware>true</LargeAddressAware>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\external\gog\DevelopmentKit_Windows_32bit_MSVC17\Include;$(SolutionDir)..\..\external\origin\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+  <ItemDefinitionGroup>
+    <!-- For SN DBS -->
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+</Project>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)..\..\obj\$(ProjectName.Substring(4))\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\..\obj\$(ProjectName.Substring(4))\$(Platform)\$(Configuration)\</IntDir>
+	<TargetName>$(ProjectName.Substring(4))</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <DebugInformationFormat Condition="'$(Configuration)'=='Debug' And '$(Platform)'=='Win32'">ProgramDatabase</DebugInformationFormat>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)..\..\;$(SolutionDir)..\..\external;$(SolutionDir)..\..\external\lua\include;$(SolutionDir)..\..\external\wwise\include;$(SolutionDir)..\..\external\speex-1.2rc1\include;$(SolutionDir)..\..\external\fbx_sdk_2018_1\include;$(SolutionDir)..\..\external\DXSDK\include;$(SolutionDir)..\..\external\binksdkwindows\include;$(SolutionDir)..\..\external\freetype-2.5.3\include;$(SolutionDir)..\..\external\recastnavigation-master\Recast\Include;$(SolutionDir)..\..\external\recastnavigation-master\Detour\Include;$(SolutionDir)..\..\external\recastnavigation-master\DebugUtils\Include;$(SolutionDir)..\..\external\recastnavigation-master\DetourTileCache\Include;$(SolutionDir)..\..\external\SDL2-2.0.4\windows\include;$(SolutionDir)..\..\external\Cg3.1\include;$(SolutionDir)..\..\external\libogg-1.3.0\include;$(SolutionDir)..\..\external\libtheora-1.1.1\include;$(SolutionDir)..\..\external\spine-c\include;$(SolutionDir)..\..\external\soloud\include;$(SolutionDir)..\..\external\Chipmunk2D\include</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>fb/lang/platform/GlobalConfig.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(IntDir)$(ProjectName.Substring(4))_compile.pdb</ProgramDataBaseFileName>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderMatchDirectory>Off</PrecompiledHeaderMatchDirectory>
+      <PrecompiledHeaderDirectory>
+      </PrecompiledHeaderDirectory>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='ReleaseNoEditor' Or '$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='ReleaseNoEditor'">FB_BUILD=FB_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions Condition="'$(Platform)'=='x64'">/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Platform)'=='Win32'">/d2Zi+ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='FinalRelease'">
+    <ClCompile>
+      <PreprocessorDefinitions>FB_BUILD=FB_FINAL_RELEASE; %(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions Condition="'$(Configuration)'=='Debug'">FB_BUILD=FB_DEBUG;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <IgnoreSpecificDefaultLibraries Condition="'$(Platform)'=='Win32' Or '$(Platform)'=='x64'">libcmt.lib;ksguid.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
