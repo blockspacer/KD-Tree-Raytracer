@@ -2,6 +2,7 @@
 
 #include "Assignment/IntersectionType.h"
 #include "fb/lang/NumericLimits.h"
+#include "Triangle.h"
 
 FB_PACKAGE1(assignment)
 

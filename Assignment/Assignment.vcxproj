@@ -274,8 +274,10 @@
     <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper2.cpp" />
     <ClCompile Include="..\FbEngineForTools\fb\util\zstd2\ZStdWrapper3.cpp" />
     <ClCompile Include="..\FbEngineForTools\fb\util\zstd\ZStdWrapper.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="KDNode.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -784,9 +786,11 @@
     <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd.h" />
     <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd_internal.h" />
     <ClInclude Include="..\FbEngineForTools\fb\util\zstd\zstd_static.h" />
+    <ClInclude Include="BoundingBox.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="IntersectionType.h" />
+    <ClInclude Include="KDNode.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightType.h" />
     <ClInclude Include="Model.h" />
@@ -795,6 +799,7 @@
     <ClInclude Include="Triangle.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cpp.hint" />
     <None Include="raytracer.ini" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

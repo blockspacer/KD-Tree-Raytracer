@@ -1,5 +1,6 @@
 #include "Precompiled.h"
 #include "Model.h"
+#include "KDNode.h"
 
 #include "Assignment/Ray.h"
 #include "external/plyreader/ply_reader.h"

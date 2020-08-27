@@ -716,6 +716,12 @@
     <ClCompile Include="..\external\tgasaver\tga_saver.cpp">
       <Filter>Source Files\external\tgasaver</Filter>
     </ClCompile>
+    <ClCompile Include="KDNode.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="..\FbEngineForTools\fb\container\natvis\aflist.natvis">
@@ -2244,10 +2250,17 @@
     <ClInclude Include="..\external\tgasaver\tga_saver.h">
       <Filter>Source Files\external\tgasaver</Filter>
     </ClInclude>
+    <ClInclude Include="KDNode.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="raytracer.ini">
       <Filter>Source Files\Assignment</Filter>
     </None>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

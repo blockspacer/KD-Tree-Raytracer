@@ -7,6 +7,8 @@ FB_DECLARE_STRUCT(assignment, Ray)
 #include "Assignment/Light.h"
 
 FB_PACKAGE1(assignment)
+class Image;
+class Model;
 
 class Raytracer
 {

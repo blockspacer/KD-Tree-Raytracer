@@ -4,6 +4,8 @@ FB_DECLARE_STRUCT(assignment, Ray)
 
 FB_PACKAGE1(assignment)
 
+struct Ray;
+
 class Triangle
 {
 public:
