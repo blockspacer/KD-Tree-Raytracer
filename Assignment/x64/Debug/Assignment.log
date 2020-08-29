@@ -1,19 +1,2 @@
-﻿  BoundingBox.cpp
-  KDNode.cpp
-  KDTree.cpp
-  Main.cpp
-  Model.cpp
-  Raytracer.cpp
-  Generating Code...
-LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
-minizipd_x64.lib(adler32.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(adler32.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(compress.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(compress.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(crc32.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(crc32.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(deflate.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(deflate.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(inffast.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inffast.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(inflate.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inflate.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(inftrees.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inftrees.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(trees.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(trees.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(uncompr.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(uncompr.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
-minizipd_x64.lib(zutil.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(zutil.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+﻿  Model.cpp
   Assignment.vcxproj -> C:\repos\KDTreeRaytracerAssignment\x64\Debug\Assignment.exe

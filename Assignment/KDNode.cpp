@@ -8,47 +8,47 @@ FB_PACKAGE1(assignment)
 
 
 void KDNode::expand() {
-  //this->triangles = tris;
+  //this->(*triangles) = tris;
   //this->leftNode = nullptr;
   //this->rightNode = nullptr;
   //this->bbox = BoundingBox(maxBounds, minBounds);
 
-  if (triangles.getSize() < 3 || depth == 20) {
+  if ((*triangles).getSize() < 3 || depth == 20) {
     return; //no more expansion
   }
 
   math::VC3 medianPoint{0, 0, 0};
 
-  SizeType trisSize = triangles.getSize();
+  SizeType trisSize = (*triangles).getSize();
 
   for (SizeType i = 0; i < trisSize; i++) {
-    medianPoint = medianPoint + triangles[i].getMidPoint() * (1.0f / trisSize);
+    medianPoint = medianPoint + (*triangles)[i].getMidPoint() * (1.0f / trisSize
+                  );
   }
-
-  PodVector<Triangle> leftTris;
-  PodVector<Triangle> rightTris;
 
   int8_t axixClipIndex = depth % 3;
   int32_t commonTris = 0;
+  PodVector<Triangle> *leftTris = new PodVector<Triangle>;
+  PodVector<Triangle> *rightTris = new PodVector<Triangle>;
 
-  for (SizeType i = 0; i < triangles.getSize(); i++) {
-    int8_t side = triangles[i].getSideFromPoint(medianPoint, axixClipIndex);
+  for (SizeType i = 0; i < (*triangles).getSize(); i++) {
+    int8_t side = (*triangles)[i].getSideFromPoint(medianPoint, axixClipIndex);
     fb_assert(side == -1 || side == 0 || side == 1);
 
     switch (side) {
       // Left
     case -1:
-      leftTris.pushBack(triangles[i]);
+      (*leftTris).pushBack((*triangles)[i]);
       break;
       // Both
     case 0:
-      leftTris.pushBack(triangles[i]);
-      rightTris.pushBack(triangles[i]);
+      (*leftTris).pushBack((*triangles)[i]);
+      (*rightTris).pushBack((*triangles)[i]);
       commonTris++;
       break;
       // Right
     case 1:
-      rightTris.pushBack(triangles[i]);
+      (*rightTris).pushBack((*triangles)[i]);
       break;
     }
   }
@@ -79,8 +79,8 @@ bool KDNode::intersects(Ray &ray) {
     return rightNode->intersects(ray) || leftNode->intersects(ray);
   }
   bool somethingFound = false;
-  for (SizeType i = 0; i < triangles.getSize(); ++i) {
-    const Triangle &tri = triangles[i];
+  for (SizeType i = 0; i < (*triangles).getSize(); ++i) {
+    const Triangle &tri = (*triangles)[i];
     if (tri.intersects(ray) == 1) {
       somethingFound = true;
     }

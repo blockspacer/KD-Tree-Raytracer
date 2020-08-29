@@ -12,14 +12,15 @@ struct Ray;
 class KDNode {
 public:
   const BoundingBox* bbox;
-  const PodVector<Triangle> &triangles;
+  const PodVector<Triangle>* triangles;
 
   KDNode *leftNode;
   KDNode *rightNode;
 
-  KDNode(const PodVector<Triangle> &tris, const int32_t depth, const math::VC3 &minBounds,
+  KDNode(const PodVector<Triangle>* tris, const int32_t depth, const math::VC3 &minBounds,
          const math::VC3 &maxBounds)
-    : triangles(tris), depth(depth),
+    : triangles(tris),
+      depth(depth),
       minBounds(minBounds),
       maxBounds(maxBounds) {
 	bbox = new BoundingBox(minBounds, maxBounds);
@@ -32,8 +33,10 @@ public:
 
 private:
   const int32_t depth;
-  const math::VC3 &minBounds;
-  const math::VC3 &maxBounds;
+  const math::VC3 minBounds;
+  const math::VC3 maxBounds;
+
+
 };
 
 FB_END_PACKAGE1()

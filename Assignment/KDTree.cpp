@@ -3,7 +3,7 @@
 
 FB_PACKAGE1(assignment)
 
-KDTree::KDTree(const PodVector<Triangle> &tris, const math::VC3 &minBounds,
+KDTree::KDTree(const PodVector<Triangle> *tris, const math::VC3 &minBounds,
                const math::VC3 &maxBounds)
   : totalTriangles(tris), minBounds(minBounds), maxBounds(maxBounds) {
 }

@@ -52,7 +52,7 @@ void Model::loadModel(const HeapString &fileName) {
 
 void Model::initializeKDTree() {
   /* TODO FOR ASSIGNMENT: Create nodes for kd tree */
-  kdTree = new KDTree(polygons, minBounds, maxBounds);
+  kdTree = new KDTree(&polygons, minBounds, maxBounds);
   kdTree->init();
 }
 

@@ -12,8 +12,8 @@ public:
 	bool intersects(Ray& ray) const;
 	
 private:
-	const math::VC3& cornerMin;
-	const math::VC3& cornerMax;
+	const math::VC3 cornerMin;
+	const math::VC3 cornerMax;
 };
 
 
