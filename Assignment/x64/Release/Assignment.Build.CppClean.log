@@ -162,6 +162,7 @@ c:\repos\kdtreeraytracerassignment\assignment\x64\release\dynamicstring.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\stringtonumberconversion.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\replacesubstring.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\config.obj
+c:\repos\kdtreeraytracerassignment\assignment\x64\release\boundingbox.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\zstdwrapper.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\zstdwrapper3.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\zstdwrapper2.obj
@@ -185,7 +186,6 @@ c:\repos\kdtreeraytracerassignment\assignment\x64\release\raytracer.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\model.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\main.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\light.obj
-c:\repos\kdtreeraytracerassignment\assignment\x64\release\kdnode.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\image.obj
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\assignment.tlog\cl.command.1.tlog
 c:\repos\kdtreeraytracerassignment\assignment\x64\release\assignment.tlog\cl.read.1.tlog

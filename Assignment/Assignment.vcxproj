@@ -278,6 +278,7 @@
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="KDNode.cpp" />
+    <ClCompile Include="KDTree.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Model.cpp" />
@@ -791,6 +792,7 @@
     <ClInclude Include="Image.h" />
     <ClInclude Include="IntersectionType.h" />
     <ClInclude Include="KDNode.h" />
+    <ClInclude Include="KDTree.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightType.h" />
     <ClInclude Include="Model.h" />

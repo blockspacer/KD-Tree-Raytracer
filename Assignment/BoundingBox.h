@@ -8,12 +8,14 @@ struct Ray;
 class BoundingBox
 {
 public:
-	BoundingBox(math::VC3& cornerMax, math::VC3& cornerMin);
+	BoundingBox(const math::VC3& cornerMin, const math::VC3& cornerMax):cornerMin(cornerMin), cornerMax(cornerMax) {};
 	bool intersects(Ray& ray) const;
 	
 private:
-	math::VC3 cornerMin, cornerMax;
+	const math::VC3& cornerMin;
+	const math::VC3& cornerMax;
 };
+
 
 FB_END_PACKAGE1()
 

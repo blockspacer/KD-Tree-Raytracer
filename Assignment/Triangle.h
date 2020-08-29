@@ -13,7 +13,9 @@ public:
 
 	int intersects(Ray &ray) const;
 	bool isInvalid() const;
-	const math::VC3 &getNormal() const;
+	const math::VC3 getMidPoint() const;
+	const int8_t getSideFromPoint(math::VC3 point, int8_t axisIndex) const;
+	const math::VC3& getNormal() const;
 
 private:
 	bool isNormalInvalid() const;

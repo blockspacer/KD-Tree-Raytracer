@@ -722,6 +722,9 @@
     <ClCompile Include="BoundingBox.cpp">
       <Filter>Source Files\Assignment</Filter>
     </ClCompile>
+    <ClCompile Include="KDTree.cpp">
+      <Filter>Source Files\Assignment</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Natvis Include="..\FbEngineForTools\fb\container\natvis\aflist.natvis">
@@ -2254,6 +2257,9 @@
       <Filter>Source Files\Assignment</Filter>
     </ClInclude>
     <ClInclude Include="BoundingBox.h">
+      <Filter>Source Files\Assignment</Filter>
+    </ClInclude>
+    <ClInclude Include="KDTree.h">
       <Filter>Source Files\Assignment</Filter>
     </ClInclude>
   </ItemGroup>

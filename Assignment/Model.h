@@ -5,6 +5,7 @@
 FB_DECLARE_STRUCT(assignment, Ray)
 
 FB_PACKAGE1(assignment)
+class KDTree;
 struct Ray;
 
 class Model
@@ -24,6 +25,7 @@ private:
 	PodVector<Triangle> polygons;
 	math::VC3 maxBounds;
 	math::VC3 minBounds;
+	KDTree* kdTree;
 };
 
 FB_END_PACKAGE1()
