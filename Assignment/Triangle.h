@@ -11,6 +11,7 @@ struct ParallelPlaneSideResult
 	int8_t result;
 	PodVector<math::VC3>* rightSide;
 	PodVector<math::VC3>* leftSide;
+	PodVector<math::VC3>* onSide;
 };
 
 class Triangle

@@ -17,6 +17,7 @@ public:
   KDNode *leftNode;
   KDNode *rightNode;
 
+
   KDNode(const PodVector<Triangle>* tris, const int32_t depth, const math::VC3 &minBounds,
          const math::VC3 &maxBounds)
     : triangles(tris),
@@ -26,6 +27,7 @@ public:
 	bbox = new BoundingBox(minBounds, maxBounds);
     leftNode = nullptr;
     rightNode = nullptr;
+
   }
 
   bool intersects(Ray& ray);

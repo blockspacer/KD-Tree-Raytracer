@@ -187,35 +187,46 @@ FB_PACKAGE1(assignment)
 		return 0;*/
 
 
-		ParallelPlaneSideResult pResut = {-2,new PodVector<math::VC3>,new PodVector<math::VC3>};
+		ParallelPlaneSideResult pResut = {
+			-2,
+			new PodVector<math::VC3>,
+			new PodVector<math::VC3>,
+			new PodVector<math::VC3>
+		};
 		for (math::VC3* const v : vertices)
 		{
 			auto vertex = *v;
 			switch (perpendicularTo)
 			{
 			case 0:
-				if (vertex.x >= point.x)
+				if (vertex.x > point.x)
 					pResut.leftSide->pushBack(vertex);
+				else if (vertex.x == point.x)
+					pResut.onSide->pushBack(vertex);
 				else
 					pResut.rightSide->pushBack(vertex);
 				break;
 			case 1:
-				if (vertex.y >= point.y)
+				if (vertex.y > point.y)
 					pResut.leftSide->pushBack(vertex);
+				else if (vertex.y == point.y)
+					pResut.onSide->pushBack(vertex);
 				else
 					pResut.rightSide->pushBack(vertex);
 				break;
 			case 2:
-				if (vertex.z >= point.z)
+				if (vertex.z > point.z)
 					pResut.leftSide->pushBack(vertex);
+				else if (vertex.z == point.z)
+					pResut.onSide->pushBack(vertex);
 				else
 					pResut.rightSide->pushBack(vertex);
 				break;
 			}
 		}
 		return pResut;
-		
-	
+
+
 		/*auto firstVertex = *vertices[0];
 		auto secondVertex = *vertices[1];
 		auto thirdVertex = *vertices[2];
