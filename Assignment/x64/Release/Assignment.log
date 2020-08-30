@@ -1,9 +1,10 @@
-﻿  Model.cpp
+﻿  KDNode.cpp
+  Triangle.cpp
 LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
   Generating code
-  0 of 3841 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  3 of 3841 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    16 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
 minizip_x64.lib(adler32.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizip_x64.lib(adler32.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Release\minizip.pdb'; linking object as if no debug info
 minizip_x64.lib(compress.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizip_x64.lib(compress.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Release\minizip.pdb'; linking object as if no debug info

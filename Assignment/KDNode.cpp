@@ -32,10 +32,56 @@ void KDNode::expand() {
   PodVector<Triangle> *rightTris = new PodVector<Triangle>;
 
   for (SizeType i = 0; i < (*triangles).getSize(); i++) {
-    int8_t side = (*triangles)[i].getSideFromPoint(medianPoint, axixClipIndex);
-    fb_assert(side == -1 || side == 0 || side == 1);
+    const ParallelPlaneSideResult result = (*triangles)[i].getParallelPlaneSide(medianPoint, axixClipIndex);
+	const SizeType numRightVertices = result.rightSide->getSize();
+	const SizeType numLeftVertices = result.leftSide->getSize();
+  	
+  	if(numRightVertices ==3)
+  	{
+		(*rightTris).pushBack((*triangles)[i]);
+  	}else if(numLeftVertices ==3)
+  	{
+		(*leftTris).pushBack((*triangles)[i]);
+  	}else
+  	{
+		math::VC3 origin;
+		math::VC3 vertexOne;
+		math::VC3 vertexTwo;
+		math::VC3 fLineDirection;
+		math::VC3 sLineDirection;
+		if(numRightVertices == 1)
+		{
+			origin = (*result.rightSide)[0];
+			vertexOne = (*result.leftSide)[0];
+			vertexTwo = (*result.leftSide)[1];
+		}else
+		{
+			origin = (*result.leftSide)[0];
+			vertexOne = (*result.rightSide)[0];
+			vertexTwo = (*result.rightSide)[1];
+		}
+		fLineDirection = vertexOne - origin;
+		fLineDirection.normalize();
+		sLineDirection = vertexTwo - origin;
+		sLineDirection.normalize();
 
-    switch (side) {
+		switch (axixClipIndex)
+		{
+		case 0:
+			break;
+		case 1:
+			break;
+		case 2:
+			break;
+		}
+  		
+  	}
+  	
+    //fb_assert(side == -1 || side == 0 || side == 1);
+
+  	
+
+    /*switch (side) {
       // Left
     case -1:
       (*leftTris).pushBack((*triangles)[i]);
@@ -43,14 +89,14 @@ void KDNode::expand() {
       // Both
     case 0:
       (*leftTris).pushBack((*triangles)[i]);
-      (*rightTris).pushBack((*triangles)[i]);
+	  (*rightTris).pushBack((*triangles)[i]);
       commonTris++;
       break;
       // Right
     case 1:
       (*rightTris).pushBack((*triangles)[i]);
       break;
-    }
+    }*/
   }
 
   const math::VC3 rightChildMaxBound(
@@ -79,7 +125,7 @@ bool KDNode::intersects(Ray &ray) {
     return rightNode->intersects(ray) || leftNode->intersects(ray);
   }
   bool somethingFound = false;
-  for (SizeType i = 0; i < (*triangles).getSize(); ++i) {
+  for (SizeType i = 0; i < (*triangles).getSize(); i++) {
     const Triangle &tri = (*triangles)[i];
     if (tri.intersects(ray) == 1) {
       somethingFound = true;

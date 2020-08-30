@@ -6,6 +6,13 @@ FB_PACKAGE1(assignment)
 
 struct Ray;
 
+struct ParallelPlaneSideResult
+{
+	int8_t result;
+	PodVector<math::VC3>* rightSide;
+	PodVector<math::VC3>* leftSide;
+};
+
 class Triangle
 {
 public:
@@ -14,7 +21,7 @@ public:
 	int intersects(Ray &ray) const;
 	bool isInvalid() const;
 	const math::VC3 getMidPoint() const;
-	const int8_t getSideFromPoint(math::VC3 point, int8_t axisIndex) const;
+	const ParallelPlaneSideResult getParallelPlaneSide(const math::VC3& point, int8_t perpendicularTo) const;
 	const math::VC3& getNormal() const;
 
 private:
