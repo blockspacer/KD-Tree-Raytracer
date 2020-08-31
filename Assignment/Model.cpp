@@ -52,6 +52,7 @@ void Model::loadModel(const HeapString &fileName) {
 
 void Model::initializeKDTree() {
   /* TODO FOR ASSIGNMENT: Create nodes for kd tree */
+	
   kdTree = new KDTree(&polygons, minBounds, maxBounds);
   kdTree->init();
 }
@@ -61,7 +62,6 @@ bool Model::getIntersection(Ray &ray) const {
   if (isKDTreeInitialized()) {
     /* TODO FOR ASSIGNMENT: Get intersection using KD Tree */
 	  return kdTree->intersects(ray);
-  
   }
 
   bool somethingFound = false;

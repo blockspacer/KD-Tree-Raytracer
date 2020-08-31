@@ -21,8 +21,16 @@ public:
 
 	int intersects(Ray &ray) const;
 	bool isInvalid() const;
+
+	///<summary>Returns the mid point of the triangle.</summary>
 	const math::VC3 getMidPoint() const;
+
+	///<summary>Returns a struct containing some vectors tha include vertices of this triangle based on if they fall on either side of the parallel plane.</summary>
+	/// <param name="point">Gets a point on the plane.</param>
+	/// <param name="perpendicularTo">Gets the axis the plane is perpendicular to.</param>
 	const ParallelPlaneSideResult getParallelPlaneSide(const math::VC3& point, int8_t perpendicularTo) const;
+
+	
 	const math::VC3& getNormal() const;
 
 private:

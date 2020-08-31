@@ -8,6 +8,7 @@ KDTree::KDTree(const PodVector<Triangle> *tris, const math::VC3 &minBounds,
   : totalTriangles(tris), minBounds(minBounds), maxBounds(maxBounds) {
 }
 
+
 void KDTree::init() {
   root = new KDNode(totalTriangles, 0, minBounds, maxBounds);
   root->expand();

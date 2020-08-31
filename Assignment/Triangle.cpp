@@ -157,6 +157,7 @@ FB_PACKAGE1(assignment)
 		}
 	}
 
+
 	const math::VC3 Triangle::getMidPoint() const
 	{
 		return (*vertices[0] + *vertices[1] + *vertices[2]) / 3;
@@ -170,23 +171,6 @@ FB_PACKAGE1(assignment)
 	*/
 	const ParallelPlaneSideResult Triangle::getParallelPlaneSide(const math::VC3& point, int8_t perpendicularTo) const
 	{
-		/*int8_t fVertexDot = signbit(dot(*vertices[0] - point, normal));
-		int8_t sVertexDot = signbit(dot(*vertices[1] - point, normal));
-		int8_t tVertexDot = signbit(dot(*vertices[2] - point, normal));
-
-
-		if (fVertexDot == 0 && sVertexDot == 0 && tVertexDot == 0)
-		{
-			return 1;
-		}
-		if (fVertexDot == 1 && sVertexDot == 1 && tVertexDot == 1)
-		{
-			return -1;
-		}
-
-		return 0;*/
-
-
 		ParallelPlaneSideResult pResut = {
 			-2,
 			new PodVector<math::VC3>,
@@ -225,48 +209,6 @@ FB_PACKAGE1(assignment)
 			}
 		}
 		return pResut;
-
-
-		/*auto firstVertex = *vertices[0];
-		auto secondVertex = *vertices[1];
-		auto thirdVertex = *vertices[2];
-
-
-	
-		switch (perpendicularTo) {
-		case 0: //X
-		  if (firstVertex.x >= point.x && secondVertex.x >= point.x && thirdVertex.x >=
-		      point.x) {
-		    return -1;
-		  }
-		  if (firstVertex.x < point.x && secondVertex.x < point.x &&
-		      thirdVertex.x < point.x) {
-		    return 1;
-		  }
-		  return 0;
-		case 1: //Y
-		  if (firstVertex.y >= point.y && secondVertex.y >= point.y && thirdVertex.y >=
-		      point.y) {
-		    return -1;
-		  }
-		  if (firstVertex.y < point.y && secondVertex.y < point.y && thirdVertex.y <
-		      point.y) {
-		    return 1;
-		  }
-		  return 0;
-	  
-		case 2: //Z
-		  if (firstVertex.z >= point.z && secondVertex.z >= point.z && thirdVertex.z >=
-		      point.z) {
-		    return -1;
-		  }
-		  if (firstVertex.z < point.z && secondVertex.z < point.z && thirdVertex.z <
-		      point.z) {
-		    return 1;
-		  }
-		  return 0;
-		}
-		return -2;*/
 	}
 
 	bool Triangle::isInvalid() const

@@ -24,21 +24,21 @@ bool BoundingBox::intersects(Ray &ray) const {
   }
   
   // X
-  //fb_assert(ray.direction.x != 0);
+
   float txMin = (cornerMin.x - ray.origin.x) / ray.direction.x;
   float txMax = (cornerMax.x - ray.origin.x) / ray.direction.x;
   if (txMin > txMax)
     lang::swap(txMin, txMax);
 
   // Y
-  //fb_assert(ray.direction.y != 0);
+
   float tyMin = (cornerMin.y - ray.origin.y) / ray.direction.y;
   float tyMax = (cornerMax.y - ray.origin.y) / ray.direction.y;
   if (tyMin > tyMax)
     lang::swap(tyMin, tyMax);
 
   // Z
-  //fb_assert(ray.direction.z != 0);
+
   float tzMin = (cornerMin.z - ray.origin.z) / ray.direction.z;
   float tzMax = (cornerMax.z - ray.origin.z) / ray.direction.z;
   if (tzMin > tzMax)
