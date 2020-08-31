@@ -1,2 +1,9 @@
-﻿  KDNode.cpp
+﻿  BoundingBox.cpp
+  KDNode.cpp
+  KDTree.cpp
+  Main.cpp
+  Model.cpp
+  Raytracer.cpp
+  Triangle.cpp
+  Generating Code...
   Assignment.vcxproj -> C:\repos\KDTreeRaytracerAssignment\x64\Debug\Assignment.exe
