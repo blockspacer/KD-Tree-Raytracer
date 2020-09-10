@@ -1,2 +1,220 @@
-﻿  KDNode.cpp
+﻿  Precompiled.cpp
+  ply_reader.cpp
+  tga_saver.cpp
+  ConsoleOutputReceiver.cpp
+  ContainerTest.cpp
+  DataBase.cpp
+  ImpByteElementArray.cpp
+  LinearHashBase.cpp
+  StringMapFind.cpp
+  CreateDirectory.cpp
+  DebugBlockWriter.cpp
+  File.cpp
+  FileAllocator.cpp
+  FileHash.cpp
+  FileManager.cpp
+  FileRename.cpp
+  LineReader.cpp
+  FocusTestReportWriter.cpp
+  Logger.cpp
+  MemoryMappedFile.cpp
+  OutputFile.cpp
+  Generating Code...
+  Compiling...
+  CachingCustomizableStandardFilePackage.cpp
+  CustomizableStandardFilePackage.cpp
+  MysteryFilePackage.cpp
+  RootPath.cpp
+  SpecialDirectory.cpp
+  TimeStamp.cpp
+  tinyxml2.cpp
+  CopyFile.cpp
+  CreateDirectoryWindows.cpp
+  DeleteDirectory.cpp
+  DeleteFile.cpp
+  DoesFileExist.cpp
+  FileList.cpp
+  FileSystemListener.cpp
+  InputFile.cpp
+  InputFileAsyncWindows.cpp
+  MoveFile.cpp
+  TemporaryFile.cpp
+  TimeStampWindows.cpp
+  AlignmentFunctions.cpp
+  Generating Code...
+  Compiling...
+  AllocationDebugger.cpp
+  AppendCallstack.cpp
+  AssertHelp.cpp
+  AssertStats.cpp
+  Atomics.cpp
+  BitmaskTypes.cpp
+  CallStack.cpp
+  CallstackStorage.cpp
+  CombinedAllocation.cpp
+  CountBits.cpp
+  Cstrlen.cpp
+  DebugHelp.cpp
+  Delegate.cpp
+  Div128.cpp
+  FBAssert.cpp
+  FBSingleThreadAssert.cpp
+  FiendishAllocator.cpp
+  Hash.cpp
+  GlobalLogger.cpp
+  Megaton.cpp
+  Generating Code...
+  Compiling...
+  MegatonDebugger.cpp
+  MemoryFunctions.cpp
+  MemTools.cpp
+  PrintfHandler.cpp
+  ProgrammerAssertPrinting.cpp
+  ProjectInfo.cpp
+  SharedPointer.cpp
+  Signal.cpp
+  StackTrace.cpp
+  StackTraceWindows.cpp
+  StoreCallstack.cpp
+  StoredCallstack.cpp
+  DataGuard.cpp
+  FastSemaphore.cpp
+  IThreadEntry.cpp
+  Mutex.cpp
+  ScopedRef.cpp
+  Thread.cpp
+  ConditionVariableWindows.cpp
+  MutexWindows.cpp
+  Generating Code...
+  Compiling...
+  SemaphoreWindows.cpp
+  ThreadWindows.cpp
+  HighResolutionTime.cpp
+  RunningSystemTimer.cpp
+  ScalableTimer.cpp
+  SystemTime.cpp
+  Time.cpp
+  Color3.cpp
+  BezierCurve.cpp
+  CubicBezierCurve.cpp
+  MultiCurve.cpp
+  PolylineCurve.cpp
+  TCBCurve.cpp
+  Denormal.cpp
+  Matrix.cpp
+  Quaternion.cpp
+  RandomSeed.cpp
+  SIMDVec4.cpp
+  Vec2.cpp
+  Vec3.cpp
+  Generating Code...
+  Compiling...
+  Vec4.cpp
+  AtomicLinearAllocator.cpp
+  AtomicPointerList.cpp
+  BlockAllocator.cpp
+  FixedSizeAllocator.cpp
+  FixedSizeAllocatorBase.cpp
+  FixedSizeDynamicAllocator.cpp
+  FixedSizeLargeDynamicAllocator.cpp
+  GlobalFixedAllocator.cpp
+  HeapAddressCheck.cpp
+  HeapAllocator.cpp
+  LargePageAllocator.cpp
+  MultiFixedSizeAllocator.cpp
+  MultiFixedSizeDynamicAllocator.cpp
+  MultiSizePool.cpp
+  DebugStats.cpp
+  DebugStatsScope.cpp
+  DebugStatsVariable.cpp
+  SystemAllocator.cpp
+  TempAllocator.cpp
+  Generating Code...
+  Compiling...
+  TempVariableAllocator.cpp
+  AllocationProfiler.cpp
+  InputLagDebugger.cpp
+  MutexProfiler.cpp
+  Profiler.cpp
+  ScopedProfiler.cpp
+  StupidHashMap.cpp
+  StupidRingBuffer.cpp
+  TaskProfiler.cpp
+  ZoneProfiler.cpp
+  ZoneProfilerCallstackDump.cpp
+  ZoneProfilerCommon.cpp
+  InputStream.cpp
+  InputStream2.cpp
+  TextOutputStream.cpp
+  AppendToString.cpp
+  CompareString.cpp
+  Filename.cpp
+  FindString.cpp
+  ReplaceChar.cpp
+  Generating Code...
+  Compiling...
+  ReplaceSubstring.cpp
+  StringToNumberConversion.cpp
+  DynamicString.cpp
+  HeapString.cpp
+  StaticString.cpp
+  StringBuilder.cpp
+  StringImp.cpp
+  StringLiteral.cpp
+  StringRef.cpp
+  CreateTemporaryHeapString.cpp
+  SimpleUTF16String.cpp
+  SplitString.cpp
+  UnicodeConverter.cpp
+  SystemInfoUtil.cpp
+  SVN.cpp
+  FindProcess.cpp
+  GetProcessId.cpp
+  RunProcess.cpp
+  GetSystemThreadPriority.cpp
+  Scheduler.cpp
+  Generating Code...
+  Compiling...
+  ToolsMain.cpp
+  ToolSystemAllocator.cpp
+  Base64.cpp
+  BufferCompressor.cpp
+  Checksum.cpp
+  Compressor.cpp
+  ExpGolomb.cpp
+  FBSpam.cpp
+  LZ4HCWrapper.cpp
+  LZ4Wrapper.cpp
+  OptionsFileModifier.cpp
+  Tweaker.cpp
+  TweakManager.cpp
+  ZStdWrapper0.cpp
+  ZStdWrapper1.cpp
+  ZStdWrapper2.cpp
+  ZStdWrapper3.cpp
+  ZStdWrapper.cpp
+  BoundingBox.cpp
+  Config.cpp
+  Generating Code...
+  Compiling...
+  Image.cpp
+  KDNode.cpp
+  KDTree.cpp
+  Light.cpp
+  Main.cpp
+  Model.cpp
+  Raytracer.cpp
+  Triangle.cpp
+  Generating Code...
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+minizipd_x64.lib(adler32.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(adler32.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(compress.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(compress.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(crc32.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(crc32.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(deflate.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(deflate.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(inffast.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inffast.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(inflate.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inflate.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(inftrees.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(inftrees.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(trees.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(trees.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(uncompr.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(uncompr.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
+minizipd_x64.lib(zutil.obj) : warning LNK4099: PDB 'minizip.pdb' was not found with 'minizipd_x64.lib(zutil.obj)' or at 'C:\repos\KDTreeRaytracerAssignment\x64\Debug\minizip.pdb'; linking object as if no debug info
   Assignment.vcxproj -> C:\repos\KDTreeRaytracerAssignment\x64\Debug\Assignment.exe

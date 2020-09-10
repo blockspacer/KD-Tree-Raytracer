@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite", "sqlite.vcxproj", "{BDB56193-71DB-4069-8510-DC03C451A378}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDB56193-71DB-4069-8510-DC03C451A378}.Debug|x64.ActiveCfg = Debug|x64
+		{BDB56193-71DB-4069-8510-DC03C451A378}.Debug|x64.Build.0 = Debug|x64
+		{BDB56193-71DB-4069-8510-DC03C451A378}.Release|x64.ActiveCfg = Release|x64
+		{BDB56193-71DB-4069-8510-DC03C451A378}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {715D7F6E-4BCD-4395-814E-5D0F1200038F}
+	EndGlobalSection
+EndGlobal
