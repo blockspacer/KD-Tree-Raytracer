@@ -96,4 +96,9 @@ const math::VC3 &Model::getMinBounds() const {
   return minBounds;
 }
 
+Model::~Model() {
+	delete kdTree;
+}
+
+
 FB_END_PACKAGE1()

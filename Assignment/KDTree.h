@@ -26,11 +26,14 @@ public:
 
 	///<summary>Returns the root of the K-D Tree.</summary>
   const KDNode *getRoot() const;
+
+  ~KDTree();
 	
 private:
   KDNode *root;
   const PodVector<Triangle>* totalTriangles;
   const math::VC3 &minBounds, maxBounds;
+  
 };
 
 FB_END_PACKAGE1()

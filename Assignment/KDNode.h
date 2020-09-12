@@ -42,6 +42,8 @@ public:
   ///<summary>Expand this node throughout its children recursively. This process stops when it reaches to some limit set in the code.</summary>
   void expand();
 
+   ~KDNode();
+
 private:
   const int32_t depth;
   const math::VC3 minBounds;

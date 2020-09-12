@@ -21,7 +21,14 @@ bool KDTree::intersects(Ray &ray) {
 
 const KDNode *KDTree::getRoot() const {
   return root;
+
 }
+
+KDTree::~KDTree()
+{
+   delete root;
+}
+
 
 
 FB_END_PACKAGE1()

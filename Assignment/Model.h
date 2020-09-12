@@ -20,6 +20,8 @@ public:
 	const math::VC3 &getMaxBounds() const;
 	const math::VC3 &getMinBounds() const;
 
+        ~Model();
+
 private:
 	PodVector<math::VC3> vertices;
 	PodVector<Triangle> polygons;
